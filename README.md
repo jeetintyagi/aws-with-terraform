@@ -45,7 +45,7 @@ aws configure
 Each `dayXX/` directory is a standalone Terraform project. Navigate into any day's folder and run the standard Terraform workflow:
 
 ```bash
-cd day01/
+cd lessons/day01/
 
 # 1. Initialise — downloads providers & modules
 terraform init
