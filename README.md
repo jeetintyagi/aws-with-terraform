@@ -1,6 +1,6 @@
 # ☁️ AWS with Terraform — Piyush Sachdeva (YouTube)
 
-> Hands-on Terraform scripts built while following the **[AWS with Terraform](https://www.youtube.com/c/PiyushSachdeva)** course by **Piyush Sachdeva** on YouTube.  
+> Hands-on Terraform scripts built while following the **[AWS with Terraform](https://www.youtube.com/playlist?list=PLl4APkPHzsUWr5H7mprC8O21Crq_NnbYx)** course by **Piyush Sachdeva** on YouTube.  
 > Each day's work is organised into its own directory with isolated Terraform configurations.
 
 ---
