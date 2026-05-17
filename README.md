@@ -89,7 +89,7 @@ terraform destroy
 
 - **Instructor:** Piyush Sachdeva
 - **Platform:** YouTube
-- **Playlist:** [AWS with Terraform – Full Course](https://www.youtube.com/@PiyushSachdeva)
+- **Playlist:** [AWS with Terraform – Full Course](https://www.youtube.com/playlist?list=PLl4APkPHzsUWr5H7mprC8O21Crq_NnbYx)
 
 ---
 
