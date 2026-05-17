@@ -8,7 +8,7 @@
 ## 📁 Repository Structure
 
 ```
-aws-with-terraform/
+aws-with-terraform/lessons
 ├── day01/          # Terraform basics — providers, init, plan, apply
 ├── day02/          # AWS provider setup, first EC2 instance
 ├── day03/          # Variables, outputs, and terraform.tfvars
