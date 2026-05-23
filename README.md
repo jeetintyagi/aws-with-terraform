@@ -73,7 +73,9 @@ terraform destroy
 | Day 02 | AWS Provider — First EC2 Instance | ✅ Done |
 | Day 03 | Variables, Outputs & tfvars | ✅ Done |
 | Day 04 | Modules & Reusable Configurations | ✅ Done |
-| Day 05 | _Coming soon_ | 🔄 In Progress |
+| Day 05 | Resource Provisioning — VPC & EC2 Instance | ✅ Done |
+| Day 06 | File Structure & Execution Order | ✅ Done |
+| Day 07 | Terraform Variable Types & Constraints | ✅ Done |
 
 ---
 
