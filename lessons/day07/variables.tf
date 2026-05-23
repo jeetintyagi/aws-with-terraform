@@ -33,3 +33,12 @@ variable "cidr_block" {
   type        = list(string)
   default     = ["10.0.0.0/16", "192.168.0.0/16", "172.16.0.0/16"]
 }
+
+variable "tags" {
+  description = "tags for the instance"
+  type        = map(string)
+  default = {
+    "name" = "ec2-instance-main"
+    "env"  = "terraform"
+  }
+}

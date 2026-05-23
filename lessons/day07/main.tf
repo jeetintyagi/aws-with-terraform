@@ -7,10 +7,7 @@ resource "aws_instance" "ec2_main" {
   monitoring                  = var.monitoring_enabled
   associate_public_ip_address = var.associate_public_ip_address
 
-  tags = {
-    Environment = var.environment
-    Name        = "${var.environment}-instance"
-  }
+  tags = var.tags
 }
 
 
