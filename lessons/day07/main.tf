@@ -1,10 +1,10 @@
 
 resource "aws_instance" "ec2_main" {
-  count                       = var.isntance_count
+  count                       = var.config.instance_count
   ami                         = "ami-09ed39e30153c3bf9" # Amazon Linux 2023 AMI in ap-south-1
   instance_type               = "t3.micro"
-  region                      = var.region
-  monitoring                  = var.monitoring_enabled
+  region                      = var.config.region
+  monitoring                  = var.config.monitoring
   associate_public_ip_address = var.associate_public_ip_address
 
   tags = var.tags
