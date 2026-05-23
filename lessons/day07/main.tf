@@ -16,9 +16,9 @@ resource "aws_security_group" "ec2_security_group" {
   description = "Allow SSH access to the instance"
 
   ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
+    from_port   = var.ingress_values[0]
+    to_port     = var.ingress_values[2]
+    protocol    = var.ingress_values[1]
     cidr_blocks = var.cidr_block
   }
   egress {

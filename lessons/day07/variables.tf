@@ -42,3 +42,9 @@ variable "tags" {
     "env"  = "terraform"
   }
 }
+
+
+variable "ingress_values" {
+  type    = tuple([number, string, number])
+  default = [22, "tcp", 22]
+}
