@@ -76,6 +76,7 @@ terraform destroy
 | Day 05 | Resource Provisioning — VPC & EC2 Instance | ✅ Done |
 | Day 06 | File Structure & Execution Order | ✅ Done |
 | Day 07 | Terraform Variable Types & Constraints | ✅ Done |
+| Day 08 | Terraform Resource Meta-Arguments & Loops | ✅ Done |
 
 ---
 
