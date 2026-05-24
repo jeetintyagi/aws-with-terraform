@@ -2,7 +2,7 @@
 resource "aws_s3_bucket" "bucket_list" {
   count         = length(var.bucket_names)
   bucket        = "jeetintyagi-${var.bucket_names[count.index]}-${var.environment}"
-  force_destroy = true 
+  force_destroy = true
 
   tags = {
     Name        = "jeetintyagi-${var.bucket_names[count.index]}"
