@@ -16,6 +16,21 @@ variable "bucket_names" {
   default     = ["my-day08-bucket-a", "my-day08-bucket-b", "my-day08-bucket-c"]
 }
 
+variable "bucket_name_set" {
+  description = "A set of unique S3 bucket names to be created using for_each"
+  type        = set(string)
+  default     = ["my-day08-bucket-x", "my-day08-bucket-y", "my-day08-bucket-z"]
+}
+
+variable "tags" {
+  type = map(string)
+  default = {
+    Name        = "jeetintyagi-bucket"
+    Environment = "day08-env"
+    ManagedBy   = "Terraform"
+  }
+}
+
 variable "iam_users" {
   description = "A map of IAM users to create using for_each, containing their roles and departments"
   type = map(object({

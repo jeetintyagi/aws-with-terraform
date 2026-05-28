@@ -4,12 +4,15 @@ resource "aws_s3_bucket" "bucket_list" {
   bucket        = "jeetintyagi-${var.bucket_names[count.index]}-${var.environment}"
   force_destroy = true
 
-  tags = {
-    Name        = "jeetintyagi-${var.bucket_names[count.index]}"
-    Environment = var.environment
-    ManagedBy   = "Terraform"
-    CountIndex  = count.index
-  }
+  tags = var.tags
+}
+
+resource "aws_s3_bucket" "bucket_set" {
+  for_each      = var.bucket_name_set
+  bucket        = "jeetintyagi-${each.value}-${var.environment}"
+  force_destroy = true
+
+  tags = var.tags
 }
 
 resource "aws_iam_user" "iam_users" {
@@ -36,6 +39,6 @@ resource "aws_instance" "ec2_main" {
 
   # Explicit dependency: The EC2 instance will wait until all S3 buckets are fully created
   depends_on = [
-    aws_s3_bucket.bucket_list
+    aws_s3_bucket.bucket_set
   ]
 }

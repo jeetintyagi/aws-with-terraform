@@ -1,7 +1,7 @@
 
 output "bucket_names_and_arns" {
   description = "A list of strings combining the S3 bucket names and their ARNs using a for loop"
-  value       = [for bucket in aws_s3_bucket.bucket_list : "${bucket.bucket} -> ${bucket.arn}"]
+  value       = [for bucket in aws_s3_bucket.bucket_set : "${bucket.bucket} -> ${bucket.arn}"]
 }
 
 
